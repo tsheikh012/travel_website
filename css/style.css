@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ##################### html elements style ########### */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.7;
+}
+
+ul .li {
+    list-style: none;
+}
+
+a {
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+p,
+li {
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    padding: 10px;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+img {
+    padding: 2.5rem;
+    size: 10rem;
+    height: 7em
+}
+
+/* ######################## utility classes ########## */
+.bg-dark {
+    background-color: #263238;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.lg-heading {
+    font-size: 3.5em;
+    text-transform: uppercase;
+}
+
+.md-heading {
+    font-size: 2.2rem;
+}
+
+.text-red {
+    color: red;
+}
+
+.text-light {
+    color: aliceblue
+}
+
+.text-black {
+    color: black;
+}
+
+.text-grey {
+    color: #555555;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+    border-radius: 10em;
+}
+
+.btn-primary {
+    background-color: white;
+    border-radius: 10em;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0.5em 1.5em;
+}
+
+.btn-primary:hover {
+    background-color: #fcf3f2;
+}
+
+.btn-secondary {
+    border: 1px solid red;
+    border-radius: 1.5em;
+    background: white;
+}
+
+.btn-secondary:hover {
+    background-color: #fcf3f2;
+}
+
+/* ############### header styling ########### */
+.header {
+    position: relative;
+    height: 100vh;
+    background: url(../img/nbg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav-container{
+    display: flex;
+    direction: row;
+}
+.navbar {
+    padding: 1rem;
+}
+
+.navbar .logo {
+    float: left;
+}
+
+.navbar .nav-items {
+    display: flex;
+    padding-left: 5rem;
+    margin-top: 1rem;
+    list-style: none;
+    position: absolute;
+    right: 370px;
+}
+
+.navbar a:link,
+.navbar a:visited {
+    color: #f4f4f4;
+}
+
+.navbar a {
+    padding: 0.3rem;
+}
+
+.navbar a:hover {
+    border-bottom: 1px solid white;
+}
+
+.navbar::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ############# header content style ################# */
+.header-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: linear-gradient(rgba(1, 1, 1, 10)), rgba(1, 1, 1, 10);
+}
+
+.header-content h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header-content p {
+    text-transform: uppercase;
+}
+
+/* ################# SHOW CASE STYLING ############## */
+.showcase {
+    padding: 10rem 0;
+    background: #ddd;
+}
+
+.row {
+    height: 385px;
+    background: white;
+    box-shadow: 0px 0px 20px 0px #aaa;
+}
+
+.row1 {
+    margin-bottom: 10rem;
+}
+
+.row1 .img-box,
+.row2 .text-box {
+    float: left;
+    width: 50%;
+}
+
+.row2 .img-box,
+.row1 .text-box {
+    float: right;
+    width: 50%;
+}
+
+.row .img-box {
+    height: 100%;
+}
+
+.row .text-box {
+    padding: 2rem;
+}
+
+.row .img-box img {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    padding: 0%;
+    margin: 0%;
+}
+
+.bb {
+    margin: 0%;
+}
+
+/* ##################### features ############### */
+.features {
+    padding: 10rem 0rem;
+}
+
+.box-covers {
+    box-shadow: 0px 0px 30px 0px #aaa;
+    text-align: center;
+}
+
+.box-covers::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.box {
+    width: 33.333%;
+    padding: 2rem;
+    float: left;
+    height: equal;
+}
+
+.box-1 {
+    background-color: #263238;
+    color: white;
+    padding-bottom: 184px;
+}
+
+.box-2 {
+    background-color: rgb(231, 63, 91);
+    color: white;
+    padding-bottom: 156px;
+}
+
+.box-3 {
+    background-color: #263238;
+    color: white;
+}
+
+/* ##################### Footer ########### */
+.footer {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.social-media-links i {
+    color: white;
+    margin: 2rem;
+}
+
+/* ################### ABOUT PAGE STYLING ##################### */
+.about {
+    padding: 5rem 0;
+}
+
+.about-heading {
+    border-bottom: 3px solid #e63946;
+}
+
+/* ############### countstyling ####################### */
+.counts::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.counts-itmes {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.counts-itmes span {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #e63946;
+}
+
+.counts-itmes p {
+    font-weight: 700;
+    color: #555;
+    font-size: 1.8rem;
+}
+
+/* ####################### Last Line #############*/
+.cta-bannar {
+    background: linear-gradient(25deg, #d64c7f, #ee4756 50%);
+    color: #f4f4f4;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px #0e0b0b57;
+    margin-top: 3rem;
+}
+
+.cta-bannar::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.cta-bannar-left {
+    width: 60%;
+    float: left;
+}
+
+.cta-bannar-right {
+    width: 40%;
+    float: right;
+    text-align: right;
+}
+
+.cta-line {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    font-weight: 700;
+}
+
+.btn-cta {
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    border: 4px solid white;
+    padding: 0.3em 2em;
+    letter-spacing: 0.5rem;
+    color: #f4f4f4;
+}
+
+/* ####################### Contact page Styling ##################### */
+.contact-form {
+    padding: 5rem 0;
+    background-color: #f7f7f7;
+
+}
+
+.form-wraper::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.form-wraper .company-address {
+    height: 760px;
+    float: left;
+    width: 49%;
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.form-wraper .company-address i {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.form-wraper .company-address h2 {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.form-wraper .company-address img {
+    max-width: 90%;
+    min-height: 40rem;
+    object-fit: cover;
+    object-position: left;
+}
+
+/* #################### Form Styling ###################  */
+.form-wraper .form {
+    height: 760px;
+    font-size: 1.6rem;
+    float: right;
+    width: 49%;
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.form h1::after {
+    content: '';
+    display: block;
+    border: 3px solid #ee4756;
+    width: 100%;
+}
+
+.form-wraper .form label {
+    display: block;
+}
+
+.form-wraper .form input {
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.form-wraper .form .form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-wraper .form label::after {
+    content: ' * ';
+    color: #ee4756;
+}
+
+.form-wraper .form textarea {
+    width: 95%;
+    height: 200px;
+    padding: 1rem;
+}
+
+.form-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background-color: #e63946;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ################### Media Quries ########################### */
+@media(max-width:500px) {
+    html {
+        font-size: 50%;
+    }
+
+    .navbar .nav-item,
+    .navbar .logo {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
